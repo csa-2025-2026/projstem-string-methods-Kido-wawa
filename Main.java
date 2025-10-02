@@ -3,6 +3,9 @@ public class Main
   public static void main(String[] args)
   {
     // write your code here
+
+
+
   }
 
   /** Precondition: s1 and s2 are not null
@@ -10,7 +13,25 @@ public class Main
   */
   public static void lastFirstN(String s1, String s2, int n)
   {
-  
+    String output;
+    String firstN;
+    String lastN;
+//susbtring(0,1) - 1st letter
+//substring(0,2) - 1st 2 letters
+//...
+//substring(0,n) - 1st n letters
+    firstN = s2.substring(0,n);
+
+    //last n chatacter of s1
+    //start at index length() - n gives the last n characters
+    
+    lastN = s1.substring( s1.lenth() - n );
+ //   System.out.println(word.substring(2) + wordsubstring(0,3));
+
+
+
+    output = lastN + firstN;
+    System.out.println(output);
   }
 
   /** Precondition: s1 and s2 are not null
